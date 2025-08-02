@@ -171,7 +171,8 @@ app.use((error,req,res,next)=>{
 }
 );
 
-// app.get("/",(req,res)=>{
-//     res.send("It is working");
-// });
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 app.listen(3000,()=>{console.log("port is connected 3000");})
