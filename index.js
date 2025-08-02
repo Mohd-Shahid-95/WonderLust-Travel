@@ -97,7 +97,7 @@ const validateReview=(req,res,next)=>{
  app.get("/listings/new",isLogged,(req,res)=>{
     res.render("./listings/create.ejs");});
 //add route..
-app.post("/listings",validateListing,
+app.post("/listings",
    WrapAsync(ListingController.addroute));
 //edit route..
 app.get("/listings/:id/edit",isLogged,WrapAsync(ListingController.editroute)
