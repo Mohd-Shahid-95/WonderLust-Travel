@@ -16,7 +16,6 @@ const flash=require("connect-flash");
 const passport = require('passport');
 const LocalStrategy= require('passport-local');
 const User = require('./models/pass.js');
-const user = require('./router/user.js');
 const {isLogged} = require('./models/middleware.js');
 const {saveRedirectUrl} = require('./models/middleware.js');
 const {isOwner} = require('./models/middleware.js');
