@@ -77,46 +77,10 @@
                             <button class="btn btn-dark add-btn ">Delete!</button>
                           </form>
                         </div>
-                      </div>
+                    </div>
                 <% } %>
             </div>
-            <% } %>
-            <h4>Where you'll be</h4>
-            <div class="col-6 offset-1 mb-3" id="map">
-                <script>
-                    // Create empty map
-                    var map = L.map('map').setView([0, 0], 2); // default view
-
-                    // Load OpenStreetMap tiles
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; OpenStreetMap contributors'
-                    }).addTo(map);
-
-                    // Try to get user's location
-                     if (navigator.geolocation) { 
-                        navigator.geolocation.getCurrentPosition(
-                        function (position) {
-                        var lat = position.coords.latitude;
-                        var lng = position.coords.longitude;
-
-                        // Move map to user's location
-                        map.setView([lat, lng], 13);
-
-                        // Add marker at location
-                        L.marker([lat, lng]).addTo(map)
-                        .openPopup();
-                    },
-                        function (error) {
-                            alert("Error getting location: " + error.message);
-                        }
-                    );
-                }else {
-                    alert("Geolocation is not supported by your browser.");
-                }
-                </script>
-
-            </div>
-           
+            <% } %> 
         </div>
     </div>    
 </body>
