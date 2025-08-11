@@ -34,10 +34,10 @@ npm install
 npm start
 
 🌍 Live Demo
-https:/wonderlust-travel.onrender.com
+https://wonderlust-travel.onrender.com
 
 📧 Contact
-📩 Email:khannshahid95@gmail.com 
+📩 Email:khannshahid95@gmail.com
 💼 GitHub:Mohd-Shahid-95
 
 If you have any feedback or suggestions, feel free to reach out: khannshahid95@gmail.com
