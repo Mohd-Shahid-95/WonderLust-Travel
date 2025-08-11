@@ -126,3 +126,10 @@ padding-top: 0.5rem;}
 .tax-info{
     display: none;
 }
+@media (max-width: 768px) {
+  /* Mobile screen ke liye styles */
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
